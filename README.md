@@ -1,7 +1,8 @@
 # KS-Regularizer-SVHN
 Experiment code of the KS-Regularizer on the SVHN Dataset
 
-Train the model using:
+## Train the model using:
+```bash
     main.py --directory "${directory}" \
             --project_name "${project_name}" \
             --run_name "${run_name[$SLURM_ARRAY_TASK_ID-1]}" \
@@ -15,7 +16,7 @@ Train the model using:
             --alpha_ks ${alpha_ks} \
             --alpha_ks_pair ${alpha_ks_pair} \
             --alpha_cov ${alpha_cov}
-
+```
 Model File save location
     directory : directory
 
@@ -51,7 +52,8 @@ Hyperparameter weight scaling:
     alpha_cov : Weight for Covariance loss
 
 
-Evaluate model with:
+## Evaluate model with:
+   ```bash
     eval.py --directory "${directory}"
-
+    ```
 directory : Path to model file
