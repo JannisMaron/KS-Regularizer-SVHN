@@ -25,7 +25,7 @@ Weights & Biases tracking
     run_name : run name
 
 Regularizer
-    loss_type = {
+    loss_type = 
         clean_loss : Regular Training,
         adv_loss : Adversarial Training,
 
@@ -34,7 +34,7 @@ Regularizer
         sup_KS_loss : KS-regularizer with supervised KS Loss,
         inv_sup_KS_loss : KS Regularizer with Inverse KS Loss,
         inv_sup_KS_pair_loss : KS Regularizer with Inverse KS Pair Loss,
-    }
+    
 
 Trainings setup
     lr : max learning rate for CLR Schedular
@@ -53,7 +53,8 @@ Hyperparameter weight scaling:
 
 
 ## Evaluate model with:
-   ```bash
+
+```bash
     eval.py --directory "${directory}"
-    ```
+ ```
 directory : Path to model file
